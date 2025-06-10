@@ -1,0 +1,290 @@
+/* 页面基础布局 */
+body {
+    position: relative;
+    background-color: #fff;
+    background-image: url("../img/about_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    color: #111;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px auto;
+    color: white;
+    background-color: #f56e06;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+}
+
+/* 页面主要内容布局 */
+.content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* 左侧个人信息卡 */
+.profile-sidebar {
+    width: 320px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-sidebar:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.profile-sidebar h2 {
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.profile-sidebar p {
+    font-size: 14px;
+    color: #333;
+    margin: 4px 0;
+    line-height: 1.5;
+}
+
+.profile-sidebar .emoji {
+    margin-right: 6px;
+    font-size: 16px;
+}
+
+
+/* 右侧内容：兴趣 + 技能 */
+.interest-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* 兴趣整体大框 */
+.hobby-section-block {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hobby-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hobby-entry:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hobby-text {
+    flex: 1;
+}
+
+.hobby-text h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.hobby-text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.hobby-icon {
+    width: 120px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* 技能块 */
+.section-block {
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5px);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-block:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.section-block h2 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.skill-list p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-sidebar {
+        width: 100%;
+    }
+    .hobby-entry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hobby-icon {
+        width: 100%;
+        height: auto;
+    }
+}
+h2{
+    text-align: center;
+}
+.skill-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skill-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background-color: #f7c843;
+  border-radius: 5px;
+  position: relative;
+  transition: width 0.6s ease;
+}
+
+.progress span {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  background: #333;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}

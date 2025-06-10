@@ -1,0 +1,92 @@
+[
+  {
+    "question": "Which fruit is red and round?",
+    "options": [
+      "Banana",
+      "Apple",
+      "Grape"
+    ],
+    "answer": "Apple"
+  },
+  {
+    "question": "Which language is used for web apps?",
+    "options": [
+      "Python",
+      "HTML",
+      "C++"
+    ],
+    "answer": "HTML"
+  },
+  {
+    "question": "What is 3 + 5?",
+    "options": [
+      "5",
+      "8",
+      "10"
+    ],
+    "answer": "8"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Earth",
+      "Venus",
+      "Mars"
+    ],
+    "answer": "Mars"
+  },
+  {
+    "question": "What color are bananas?",
+    "options": [
+      "Red",
+      "Yellow",
+      "Blue"
+    ],
+    "answer": "Yellow"
+  },
+  {
+    "question": "Which animal is known as the king of the jungle?",
+    "options": [
+      "Tiger",
+      "Lion",
+      "Elephant"
+    ],
+    "answer": "Lion"
+  },
+  {
+    "question": "What is the capital of France?",
+    "options": [
+      "Berlin",
+      "Paris",
+      "Rome"
+    ],
+    "answer": "Paris"
+  },
+  {
+    "question": "How many legs does a spider have?",
+    "options": [
+      "6",
+      "8",
+      "10"
+    ],
+    "answer": "8"
+  },
+  {
+    "question": "Which device is used to take photos?",
+    "options": [
+      "Camera",
+      "Microwave",
+      "Television"
+    ],
+    "answer": "Camera"
+  },
+  {
+    "question": "What gas do plants absorb from the air?",
+    "options": [
+      "Oxygen",
+      "Carbon Dioxide",
+      "Nitrogen"
+    ],
+    "answer": "Carbon Dioxide"
+  }
+]
